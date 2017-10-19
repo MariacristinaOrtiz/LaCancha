@@ -2,3 +2,75 @@
 *{
     box-sizing: border-box;
 }
+/* A nuestro bloque de clase green (la cancha) le agregamos color verde(rangos) una altura respecto al body*/
+.green {
+  background-color: rgb(60, 190, 113);
+  margin:0;
+  height: 750px;
+  padding: 20px;
+}
+/* a nuestro bloque hijo de clase rectangle(parte de la cancha habilitada donde esta permitido mover el balon) le agregamos borde(linea blanca que delimita la cancha), una altura respecto a su div padre, un margen, y un relleno*/
+.rectangle {
+  border: 5px solid white;
+    height: 98%;
+    margin: 5px;
+    padding: 5px;
+/* a nuestro bloque nieto de div clase green identificado como relative(area de penal izquierda del la cancha) le agregamos una posicion relativa para ubicarla en el lado izquierdo, una altura, ancho para el tamaño del area y un borde (linea blanca para delimitar el area)*/
+}
+#relative {
+  position: relative;
+  top: 155px;
+  right: 10px;
+  height: 55%;
+  border: 5px solid white;
+  width: 200px;
+}
+/* a nuestro bloque nieto de div clase green identificado como relative(area de penal izquierda del la cancha) le agregamos una posicion relativa para ubicarla en el lado derecho, una altura, ancho para el tamaño del area y un borde (linea blanca para delimitar el area)*/
+#relative2 {
+  position: relative;
+  left: 1305px;
+  bottom: 225px;
+  height: 55%;
+  border: 5px solid white;
+  width: 200px;
+}
+/* Al primer icono de balon con id left que esta al lado izquierdo le agregamos posicion relativa para ubicarlo a lado izquier, un tamaño del balon que se adecue a la cancha y un color de fondo negro*/
+#left {
+  position: relative;
+  bottom: 932px;
+  left:165px;
+  font-size: 25px;
+  color: black;
+}
+/* Al segundo icono de balon con id center que esta en el centro le agregamos posicion relativa para ubicarlo a lado central, un tamaño del balon que se adecue a la cancha y un color de fondo negro*/
+#center {
+  position: relative;
+  bottom: 1020px;
+  left:730px;
+  font-size: 25px;
+  color: black;
+}
+/* Al segundo icono de balon con id rigth que esta al lado derecho le agregamos posicion relativa para ubicarlo a lado derecho, un tamaño del balon que se adecue a la cancha y un color de fondo negro*/
+#rigth {
+  position: relative;
+  bottom: 600px;
+  left:1210px;
+  font-size: 25px;
+  color: black;
+}
+/* al primer icono de circulo agregado con el id circle que representa la circunferencia del centro de la cancha le agrgamos fondo blanco, posicion relativa para ubicarlo en la parte central y un tamaño que se ajuste a las dimensiones de la cancha*/
+#circle {
+  position: relative;
+  bottom: 630px;
+  left:470px;
+  font-size: 432px;
+  color:white; /*rgb(60, 190, 113);*/
+}
+/* al segundo icono agregado con el id circulo2  que representa el relleno verde la circunferencia del centro de la cancha le agrgamos fondo verde para que contraste con el circulo blanco y asi obtener el borde blanco (circunferencia), posicion relativa para ubicarlo en la parte central y un tamaño que se ajuste a las dimensiones de la cancha*/
+#circle2 {
+  position: relative;
+  bottom: 634px;
+  left:101px;
+  font-size: 420px;
+  color:rgb(60, 190, 113);; /*rgb(60, 190, 113);*/
+}
